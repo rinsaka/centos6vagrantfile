@@ -21,3 +21,23 @@ $ vagrant ssh
 $ vagrant halt
 ~~~
 
+以上の作業で virtual box 上に仮想マシンが作成される．
+
+# その後の作業
+
+~~~
+vagrant ssh
+
+# OSを最新状態にアップデート（時間かかります）
+sudo yum -y update
+
+# スクリプトを入手するためのgitをインストール
+sudo yum -y install git
+
+# Git の設定
+git config --global user.name "Koichiro Rinsaka"
+git config --global user.email "a@a.b.com"
+git config --global color.ui true
+git config -l
+
+~~~
