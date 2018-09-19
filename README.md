@@ -40,4 +40,11 @@ git config --global user.email "a@a.b.com"
 git config --global color.ui true
 git config -l
 
+# Github に設置された centos6ansible のクローンを作成（コピー）し，実行すれば，各種開発環境がインストール・設定される．
+git clone git@github.com:rinsaka/centos6vagrantfile.git
+
+# エラーが出た場合は Github のWebサイト https://github.com/rinsaka/centos6ansible からzip形式でダウンロードして展開する．
+unzip centos6ansible.git
 ~~~
+
+- その後のインストール作業は centos6ansible/README.MD を参照してください．
